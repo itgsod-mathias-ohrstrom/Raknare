@@ -1,10 +1,12 @@
-def count(start:, stop:)
-  start = 10
-  stop = 20
-  while start < stop
-    start = start + 1
-
+def count(start:,stop:)
+  counting = "#{start}"
+  until start == stop
+    if start < stop
+      start += 1
+    else
+      start -= 1
+    end
+    counting += ",#{start}"
   end
-  return 
+  return counting
 end
-
